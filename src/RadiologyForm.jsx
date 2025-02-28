@@ -24,7 +24,7 @@ const RadiologyForm = () => {
     setImpression("");
 
     try {
-      const response = await axios.post("http://127.0.0.1:9090/generate-report", {
+      const response = await axios.post("https://ai-radiology-backend.onrender.com", {
         findings,
       });
 
